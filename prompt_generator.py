@@ -55,11 +55,11 @@ def build_prompt_from_video(v):
     SCRIPT REQUIREMENTS:
     1. Format:
        - Write as a script with *very short lines* suitable for subtitles.
-       - Use 1–2 short sentences per beat (max ~8–10 words per line).
-       - Total length should fit a {duration_sec}-second Short (approx. 40–60 words for 6–10s; 80–120 for 30–50s).
+       - Use 2–4 short sentences per beat (max ~10–15 words per line).
+       - Total length should fit a {duration_sec}-second Short (approx. 50–70 words for 6–10s; 80–120 for 30–50s).
 
     2. Structure:
-       A) HOOK (0–2s):
+       A) HOOK (0–5s):
           - Start with a scroll-stopping line directly about wealth/money:
             Example styles (adapt, don't copy):
             - "This is why most people never get rich."
@@ -69,7 +69,7 @@ def build_prompt_from_video(v):
           - 2–4 quick, punchy points or contrasts.
           - Use simple language, direct "you" framing.
           - Focus on behavior, habits, or mindset—NOT generic quotes.
-       C) CTA (last 1–2s):
+       C) CTA (last 1–5s):
           - Soft call to action:
             - "Follow for daily money stories."
             - "Save this before you forget."
@@ -97,5 +97,6 @@ def build_prompt_from_video(v):
     - Return ONLY the final short-form script with inline visual hints.
     - Do NOT include analysis or explanation.
     """
+
 
     return dedent(base_prompt).strip()
